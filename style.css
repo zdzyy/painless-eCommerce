@@ -103,6 +103,7 @@ nav a {
 	gap: 30px;
 	width: 100%;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .card{
 	position: relative;
