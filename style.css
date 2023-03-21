@@ -59,7 +59,7 @@ nav a {
 }
 
 #banner {
-	background-image: url(banner.jpg);
+	background-image: url();
 	background-size: cover;
 	background-position: center;
 	height: 400px;
@@ -84,11 +84,19 @@ nav a {
 	cursor: pointer;
 }
 
-.productos {
+/*.productos {
 	display: flex;
 	min-height: 100%;
 	align-items: center;
 	justify-content: center;
+}*/
+
+.productos__titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 0 50px 0;
+
 }
 .card-container {
 	display: flex;
@@ -155,6 +163,20 @@ nav a {
 	line-height: 1;
 }
 
+.productos__mas {
+	display: flex;
+	justify-content: center;
+	padding: 20px 30px;
+}
+.productos__mas button {
+	background-color: #f00;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
 footer	{
 	display: flex;
 	flex-direction: column;
