@@ -31,8 +31,8 @@ header {
 	margin: 10px;
 }
 .painless__logo {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 100%;
 	margin: 10px;
 }
 
@@ -59,9 +59,11 @@ nav a {
 }
 
 #banner {
-	background-image: url();
+	background-image: url(assets/dzyy\ on\ light\ cube.png);
 	background-size: cover;
 	background-position: center;
+	border-radius: 20px;
+	scale: .98;
 	height: 400px;
 	display: flex;
 	flex-direction: column;
@@ -118,7 +120,6 @@ nav a {
 	width: 150%;
 }
 .card__background {
-	background-image: url(assets/nintendohoodieFront.png);
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -180,7 +181,12 @@ nav a {
 }
 footer	{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+	padding: 30px;
+}
+footer img {
+	width: 70px;
 }
