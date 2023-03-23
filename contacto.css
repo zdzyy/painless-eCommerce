@@ -5,8 +5,16 @@
 }
 .social__network {
     display: flex;
+    align-items: center;
     flex-direction: row;
     margin: 10px 30px;
     padding: 0 30px;
     justify-content: space-between;
+}
+.social__network button {
+    
+}
+
+.social__ig {
+    scale: .4;
 }
