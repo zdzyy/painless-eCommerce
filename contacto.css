@@ -11,8 +11,8 @@
     padding: 0 30px;
     justify-content: space-between;
 }
-.social__network button {
-    
+.social__network a {
+    background-color: brown;
 }
 
 .social__ig {
