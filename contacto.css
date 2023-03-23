@@ -7,14 +7,22 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px 30px;
-    padding: 0 30px;
-    justify-content: space-between;
+    justify-content: center;
 }
 .social__network a {
     background-color: brown;
 }
 
 .social__ig {
-    scale: .4;
+    width: 30%;
+}
+.painles__button {
+    background-color: black;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 15px;
+    font-family: 'Cabin', sans-serif;
+	font-size: 1em;
+	cursor: pointer;
 }
