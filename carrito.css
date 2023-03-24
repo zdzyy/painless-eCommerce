@@ -1,0 +1,24 @@
+.carrito__vacio {
+    display: none;
+}
+
+.carrito__productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 20px 0 20px;
+}
+
+.carrito__producto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(92, 92, 92);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.carrito__producto-imagen {
+    width: 7rem;
+    border-radius: 1rem;
+}

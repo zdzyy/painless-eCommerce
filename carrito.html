@@ -11,13 +11,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=Cabin:wght@400;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="carrito.css">
 </head>
 
 <body>
 	<header>
 		<div class="painless">
-			<img src="assets/newlogo2023.png" alt="painlesslogo" class="painless__logo">
+			<img class="carrito__producto-imagen" src="assets/newlogo2023.png" alt="painlesslogo" class="painless__logo">
 		</div>
 		<nav>
 			<ul>
@@ -29,9 +29,66 @@
 		</nav>
 	</header>
 
-	<section class="productos">
-
-	</section>
+	<main>
+		<h2>Carrito</h2>
+		<div class="contenedor__carrito">
+			<p class="carrito__vacio">tu carrito está vacio :(</p>
+			<div class="carrito__productos">
+				<div class="carrito__producto">
+					<img class="carrito__producto-imagen" src="assets/nintendohoodieBack.png" alt="">
+					<div class="carrito__producto-titulo">
+						<small>nombre</small>
+						<h3>nintendo hoodie</h3>
+					</div>
+					<div class="carrito__producto-cantidad">
+						<small>cantidad</small>
+						<p>1</p>
+					</div>
+					<div class="carrito__producto-precio">
+						<small>precio</small>
+						<p>$1499.99</p>
+					</div>
+					<div class="carrito__producto-subtotal">
+						<small>subtotal</small>
+						<p>$1499.99</p>
+					</div>
+					<button class="carrito__producto-eliminar">/*<i class="trashicon"></i>*/</button>
+				</div>
+				<div class="carrito__producto">
+					<img class="carrito__producto-imagen" src="assets/painlesshodieeBack.png" alt="">
+					<div class="carrito__producto-titulo">
+						<small>nombre</small>
+						<h3>painless hoodie</h3>
+					</div>
+					<div class="carrito__producto-cantidad">
+						<small>cantidad</small>
+						<p>1</p>
+					</div>
+					<div class="carrito__producto-precio">
+						<small>precio</small>
+						<p>$849.99</p>
+					</div>
+					<div class="carrito__producto-subtotal">
+						<small>subtotal</small>
+						<p>$849.99</p>
+					</div>
+					<button class="carrito__producto-eliminar">/*<i class="trashicon"></i>*/</button>
+				</div>
+			</div>
+			<div class="carrito__acciones">
+				<div class="carrito__acciones-izq">
+					<button class="carrito__acciones-vaciar">Vaciar carrito</button>
+				</div>
+				<div class="carrito__acciones-der">
+					<div class="carrito__acciones-total">
+						<p>total: </p>
+						<p id="total">$2,349.98</p>
+					</div>
+					<button class="carrito__acciones-comprar">comprar ahora</button>
+				</div>
+			</div>
+		</div>
+	</main>
 
 	<footer>
 		<p>PAINLESS - Todos los derechos reservados</p>
