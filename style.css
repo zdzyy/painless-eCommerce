@@ -53,6 +53,12 @@ nav li {
 	border-radius: 20px;
 }
 
+.numerito {
+	background-color: rgb(92, 92, 92);
+	border-radius: .25rem;
+	padding: 0 .25rem;
+}
+
 nav a {
 	color: #fff;
 	text-decoration: none;
