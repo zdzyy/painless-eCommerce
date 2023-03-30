@@ -22,7 +22,8 @@ const productos = [
 ];
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
-let botonesAgregar = document.querySelectorAll(".card__add")
+let botonesAgregar = document.querySelectorAll(".card__add");
+const numerito = document.querySelector("#numerito");
 
 function cargarProductos() {
     productos.forEach(producto => {
@@ -65,4 +66,11 @@ function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
-} 
+    actualizarNumerito();
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function actualizarNumerito() {
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto)=>acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
+}

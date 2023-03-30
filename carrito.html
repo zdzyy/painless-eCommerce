@@ -38,8 +38,8 @@
 	<main>
 		<h2>Carrito</h2>
 		<div class="contenedor__carrito">
-			<p class="carrito__vacio">tu carrito está vacio :(</p>
-			<div class="carrito__productos disabled">
+			<p id="carrito-vacio" class="carrito__vacio">tu carrito está vacio :(</p>
+			<div id="carrito-productos" class="carrito__productos disabled">
 				<div class="carrito__producto">
 					<img class="carrito__producto-imagen" src="assets/nintendohoodieBack.png" alt="">
 					<div class="carrito__producto-titulo">
@@ -81,7 +81,7 @@
 					<button class="carrito__producto-eliminar"><i class="bi bi-trash-fill"></i></button>
 				</div>
 			</div>
-			<div class="carrito__acciones disabled">
+			<div id="carrito-acciones" class="carrito__acciones disabled">
 				<div class="carrito__acciones-izq">
 					<button class="carrito__acciones-vaciar">Vaciar carrito</button>
 				</div>
@@ -93,7 +93,7 @@
 					<button class="carrito__acciones-comprar">comprar</button>
 				</div>
 			</div>
-			<p class="carrito__comprado disabled">Muchas gracias por tu compra (◕‿◕✿)</p>
+			<p id="carrito-comprado" class="carrito__comprado disabled">Muchas gracias por tu compra (◕‿◕✿)</p>
 		</div>
 	</main>
 
@@ -102,6 +102,7 @@
 	</footer>
 
 	<script src="/js/script.js"></script>
+	<script src="js/carrito.js"></script>
 </body>
 
 </html>
