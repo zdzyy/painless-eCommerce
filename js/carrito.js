@@ -1,4 +1,5 @@
-const productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarrito = localStorage.getItem("productos-en-carrito");
+productosEnCarrito = JSON.parse(productosEnCarrito);
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio")
 const contenedorCarritoProductos = document.querySelector("#carrito-productos")
@@ -11,6 +12,8 @@ if (productosEnCarrito) {
     contenedorCarritoAcciones.classList.remove("disabled");
     contenedorCarritoComprado.classList.add("disabled");
 
+    contenedorCarritoProductos.innerHTML = "";
+
     productosEnCarrito.forEach(producto => {
         const div = document.createElement("div");
         div.classList.add("carrito-producto");
@@ -18,22 +21,24 @@ if (productosEnCarrito) {
             <img class="carrito__producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="carrito__producto-titulo">
                 <small>nombre</small>
-                <h3>painless hoodie</h3>
+                <h3>${producto.titulo}</h3>
             </div>
             <div class="carrito__producto-cantidad">
                 <small>cantidad</small>
-                <p>1</p>
+                <p>${producto.cantidad}</p>
             </div>
             <div class="carrito__producto-precio">
                 <small>precio</small>
-                <p>$849.99</p>
+                <p>${producto.precio}</p>
             </div>
             <div class="carrito__producto-subtotal">
                 <small>subtotal</small>
-                <p>$849.99</p>
+                <p>${producto.precio * producto.cantidad}</p>
             </div>
-            <button class="carrito__producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-        `
+            <button class="carrito__producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+        `;
+
+        contenedorCarritoProductos.append(div);
     });
 } else {
 

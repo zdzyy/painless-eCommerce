@@ -37,7 +37,7 @@ function cargarProductos() {
 		        <button class="card__add" id="${producto.id}">agregar</button>
 	        </div>
         `;
-        contenedorProductos.append(div)
+        contenedorProductos.append(div);
     })
 
     actualizarBotonesAgregar();
@@ -52,8 +52,13 @@ function actualizarBotonesAgregar() {
 
     });
 }
-
-const productosEnCarrito = [];
+let productosEnCarrito;
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+if (productosEnCarrito) {
+    productosEnCarrito = productosEnCarritoLS;
+} else {
+    productosEnCarrito = [];
+}
 
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
