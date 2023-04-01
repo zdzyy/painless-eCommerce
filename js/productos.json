@@ -1,0 +1,20 @@
+[
+    {
+        "id": "nintendo",
+        "titulo": "Nintendo hoodie",
+        "imagen": "assets/nintendohoodieBack.png",
+        "precio": 1499.99
+    },
+    {
+        "id": "painless",
+        "titulo": "Painless hoodie",
+        "imagen": "assets/painlesshodieeBack.png",
+        "precio": 849.99
+    },
+    {
+        "id": "rndm",
+        "titulo": "RNDM XCLSV",
+        "imagen": "assets/rndmhoodie.png",
+        "precio": 1299.99
+    }
+]
